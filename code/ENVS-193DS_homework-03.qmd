@@ -1,0 +1,29 @@
+---
+title: "ENVS 193DS - Homework 3"
+author: "Izzy Chang"
+date: "2025-05-23"
+format: html
+---
+
+## GitHub Repository:
+
+<https://github.com/izzy-chang/ENVS-193DS_homework-03>
+
+## Set Up
+
+```{r}
+#| message: false
+
+# setting up packages
+library(tidyverse)
+library(here)
+library(janitor)
+library(readxl)
+library(gt)
+```
+
+```{}
+```
+
+```{}
+```
