@@ -26,6 +26,8 @@ library(gt)
 
 ### a. Data summarizing
 
+\[I could calculate the mean number of thesis hours I worked to compare average thesis productivity between days with above-median and below-median screen time, because I think I tend to procrastinate more on high screen time days, which may reduce the time I spend on my thesis. I could divide my screen time data into high vs low screen time groups by using the median screen time.\]
+
 ### b. Visualization
 
 ### c. Caption
@@ -50,8 +52,10 @@ library(gt)
 
 ### c. Aesthetic clarity
 
-```{}
+### d. Recommendations
+
+```         
 ```
 
-```{}
+```         
 ```
