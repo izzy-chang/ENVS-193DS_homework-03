@@ -22,6 +22,34 @@ library(readxl)
 library(gt)
 ```
 
+## Problem 1. Personal data
+
+### a. Data summarizing
+
+### b. Visualization
+
+### c. Caption
+
+### d. Table presentation
+
+## Problem 2. Affective visualization
+
+### a. Describe in words what an affective visualization could look like for your personal data
+
+### b. Create a sketch (on paper) of your idea
+
+### c. Make a draft of your visualization
+
+### d. Write an artist statement
+
+## Problem 3. Statistical critique
+
+### a. Revisit and summarize
+
+### b. Visual clarity
+
+### c. Aesthetic clarity
+
 ```{}
 ```
 
