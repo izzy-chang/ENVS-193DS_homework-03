@@ -30,6 +30,36 @@ library(gt)
 
 ### b. Visualization
 
+```{r - data visualization}
+
+# reading in data file and storing as an object named "my_data"
+my_data <- read_csv(here("data", "personal_data.csv")) 
+
+# convert Screen_Time_hrs to numeric
+my_data <- my_data %>%
+  mutate(Screen_Time_hrs = as.numeric(Screen_Time_hrs))
+
+# create screen time groups based on the median
+median_screen <- median(my_data$Screen_Time_hrs, na.rm = TRUE)
+
+my_data <- my_data %>%
+  mutate(Screen_Time_Group = if_else(Screen_Time_hrs > median_screen,
+"High Screen Time", "Low Screen Time"))
+
+# plot: thesis time by screen time group
+ggplot(my_data, aes(x = Screen_Time_Group, y = Thesis_Time_hrs, fill = Screen_Time_Group)) + 
+  geom_jitter(width = 0.2, alpha = 0.6, color = "gray") + 
+  stat_summary(fun = mean, geom = "bar", width = 0.5, color = "black", show.legend = FALSE) + 
+  scale_fill_manual(values = c("High Screen Time" = "coral", "Low Screen Time" = "lightblue")) +
+  labs(
+    title = "Thesis Time by Screen Time Group",
+    x = "Screen Time Group",
+    y = "Thesis Work Time (hours)"
+  ) + 
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
 ### c. Caption
 
 ### d. Table presentation
