@@ -62,6 +62,8 @@ ggplot(my_data, aes(x = Screen_Time_Group, y = Thesis_Time_hrs, fill = Screen_Ti
 
 ### c. Caption
 
+**\[Figure 1.** Comparison of thesis work time (in hours) between high and low screen time days. Each point represents a day's thesis hours, and the bar shows the mean thesis time for each group. Days with screen time above the median are labeled "High Screen Time," while those below the median are labeled "Low Screen Time." This figure illustrates how thesis productivity may vary based on daily screen usage.\]
+
 ### d. Table presentation
 
 ## Problem 2. Affective visualization
@@ -83,9 +85,3 @@ ggplot(my_data, aes(x = Screen_Time_Group, y = Thesis_Time_hrs, fill = Screen_Ti
 ### c. Aesthetic clarity
 
 ### d. Recommendations
-
-```         
-```
-
-```         
-```
