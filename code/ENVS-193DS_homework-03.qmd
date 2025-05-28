@@ -20,6 +20,7 @@ library(here)
 library(janitor)
 library(readxl)
 library(gt)
+library(ggplot2)
 ```
 
 ## Problem 1. Personal data
@@ -85,7 +86,24 @@ summary_thesis |>
 
 ### c. Make a draft of your visualization
 
-\[\]
+```{r}
+my_data <- read_csv(here("data", "personal_data.csv")) 
+
+ggplot(data = my_data,
+       aes(x = Screen_Time_hrs,
+           y = Thesis_Time_hrs,
+           color = Caffeine_Consumed,
+           size = Num_Classes)) +
+  geom_point(alpha = 0.7) + 
+  scale_color_manual(values = c("Coffee" = "darkmagenta", "Decaf Coffee" = "darkorange", "Matcha" = "darkgreen", "None" = "darkblue")) + 
+  labs(title = "Relationship Between Screen Time and Thesis Work",
+       x = "Daily Screen Time (hours)",
+       y = "Daily Thesis Time (hours)",
+       color = "Caffeine Consumed",
+       size = "Number of Classes") + 
+  theme_minimal(base_size = 8) +
+  theme(legend.key.size = unit(.5, "cm"))
+```
 
 ### d. Write an artist statement
 
