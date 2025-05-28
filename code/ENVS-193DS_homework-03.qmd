@@ -77,7 +77,7 @@ summary_thesis |>
 
 ### a. Describe in words what an affective visualization could look like for your personal data
 
-\[I could make a scatter pot with phone screen time on the x-axis and time spent on my thesis on the y-axis to see how these two variables relate. Each point would present a day, and I could use different colors or shapes to indicate the type of caffeine consumed that day. For extra insight, the size of the points could reflect the number of classes I had that day, showing how my schedule might influence both screen and thesis time. This visualization would help me quickly identify patterns or correlations, like whether high screen time is linked to less thesis work or if caffeine impacts this relationship.\]
+\[I could make a scatter plot with phone screen time on the x-axis and time spent on my thesis on the y-axis to see how these two variables relate. Each point would present a day, and I could use different colors or shapes to indicate the type of caffeine consumed that day. For extra insight, the size of the points could reflect the number of classes I had that day, showing how my schedule might influence both screen and thesis time. This visualization would help me quickly identify patterns or correlations, like whether high screen time is linked to less thesis work or if caffeine impacts this relationship.\]
 
 ### b. Create a sketch (on paper) of your idea
 
@@ -95,8 +95,16 @@ summary_thesis |>
 
 ### a. Revisit and summarize
 
+\[The authors use a one-way analysis of variance (ANOVA) to compare economic variables across country types. The response variables are cattle price and meat yield per animal and the predictor variable is the economic classification of a country (developing, transition, or developed economy). The ANOVA tests whether there are statistically significant differences in cattle price and meat yield among countries of different economic classifications. A significant result suggests that structural economic disadvantages (like low meat yield or unstable cattle prices) could make farmers in developing nations more vulnerable to the impacts of human-wildlife conflict, reinforcing the broader theme of unequal burden.\]
+
 ### b. Visual clarity
+
+\[\]
 
 ### c. Aesthetic clarity
 
+\[\]
+
 ### d. Recommendations
+
+\[\]
