@@ -97,6 +97,8 @@ summary_thesis |>
 
 \[The authors use a one-way analysis of variance (ANOVA) to compare economic variables across country types. The response variables are cattle price and meat yield per animal and the predictor variable is the economic classification of a country (developing, transition, or developed economy). The ANOVA tests whether there are statistically significant differences in cattle price and meat yield among countries of different economic classifications. A significant result suggests that structural economic disadvantages (like low meat yield or unstable cattle prices) could make farmers in developing nations more vulnerable to the impacts of human-wildlife conflict, reinforcing the broader theme of unequal burden.\]
 
+\![Figure from paper](/data/paper_figure.png)
+
 ### b. Visual clarity
 
 \[\]
