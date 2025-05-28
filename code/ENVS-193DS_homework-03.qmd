@@ -105,7 +105,7 @@ summary_thesis |>
 
 ### c. Aesthetic clarity
 
-\[\]
+\[The authors handle visual clutter well in Figure 3 by using clean and simple box plots that focus attention on the key comparisons between economic groups. The figure maintains a high data-to-ink ratio, avoiding unnecessary decorative elements or excessive grid lines, which helps emphasize the important statistical differences. They also use images of money and cattle in each graph to clearly show what the figure is showing, which I found helpful rather than reading the titles of the graphs at a quick glance.\]
 
 ### d. Recommendations
 
