@@ -109,4 +109,4 @@ summary_thesis |>
 
 ### d. Recommendations
 
-\[\]
+\[To improve Figure 3, I would recommend adding individual data points overlaid on the box plots to provide more transparency about the distribution and sample size within each economic group. This would help readers assess variability and potential outliers more easily. Additionally, I would add exact sample sizes (n) for each group directly on the figure or in the caption. Additionally, it would be helpful to differentiate between the all years combined and the 2009 only data with different colors or have bigger text because at a glance, the graphs all look very similar. Lastly, it may be helpful to have significance markers to highlight statistically significant difference between groups to immediately convey which comparisons are meaningful.\]
