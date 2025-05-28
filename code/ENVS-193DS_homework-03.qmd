@@ -56,7 +56,7 @@ ggplot(my_data, aes(
 
 ### c. Caption
 
-**\[Figure 1.** Comparison of thesis work time (in hours) between high and low screen time days. Each point represents a day's thesis hours, and the bar shows the mean thesis time for each group. Days with screen time above the median are labeled "High Screen Time," while those below the median are labeled "Low Screen Time." This figure illustrates how thesis productivity may vary based on daily screen usage.\]
+**\[Figure 1.** Mean time spent working on my thesis by type of caffeine consumed. Each dot represents one day's recorded thesis work time. Bars indicate the average thesis time for each caffeine category.\]
 
 ### d. Table presentation
 
