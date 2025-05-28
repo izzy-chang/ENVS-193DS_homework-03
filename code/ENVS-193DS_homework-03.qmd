@@ -73,19 +73,23 @@ summary_thesis |>
   )
 ```
 
-# setting up packages
-
-library(tidyverse) library(here) library(janitor) library(readxl) library(gt)
-
 ## Problem 2. Affective visualization
 
 ### a. Describe in words what an affective visualization could look like for your personal data
 
+\[I could make a scatter pot with phone screen time on the x-axis and time spent on my thesis on the y-axis to see how these two variables relate. Each point would present a day, and I could use different colors or shapes to indicate the type of caffeine consumed that day. For extra insight, the size of the points could reflect the number of classes I had that day, showing how my schedule might influence both screen and thesis time. This visualization would help me quickly identify patterns or correlations, like whether high screen time is linked to less thesis work or if caffeine impacts this relationship.\]
+
 ### b. Create a sketch (on paper) of your idea
+
+\[\]
 
 ### c. Make a draft of your visualization
 
+\[\]
+
 ### d. Write an artist statement
+
+\[\]
 
 ## Problem 3. Statistical critique
 
