@@ -101,7 +101,7 @@ summary_thesis |>
 
 ### b. Visual clarity
 
-\[\]
+\[Figure 3 clearly presents the variation in cattle price and meat yields across developing, transition, and developed economies using box plots, which effectively summarize the distribution of data including medians, quartiles, and potential outliers. The x- and y-axes are logically placed and clearly labeled, making it easy to compare economic groups. The economic groups are color coded to make it clear.\]
 
 ### c. Aesthetic clarity
 
