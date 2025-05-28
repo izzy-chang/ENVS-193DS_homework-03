@@ -26,7 +26,7 @@ library(gt)
 
 ### a. Data summarizing
 
-\[I could calculate the mean number of thesis hours I worked to compare average thesis productivity between days with above-median and below-median screen time, because I think I tend to procrastinate more on high screen time days, which may reduce the time I spend on my thesis. I could divide my screen time data into high vs low screen time groups by using the median screen time.\]
+\[I calculated the mean time spent working on my thesis (in hours) for each type of caffeine I consume that day. This is informative because different types of caffeine may affect my focus and productivity, which could influence how much time I am able to spend on my thesis.\]
 
 ### b. Visualization
 
