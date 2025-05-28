@@ -27,11 +27,17 @@ library(ggplot2)
 
 ### a. Data summarizing
 
-\[I calculated the mean time spent working on my thesis (in hours) for each type of caffeine I consume that day. This is informative because different types of caffeine may affect my focus and productivity, which could influence how much time I am able to spend on my thesis.\]
+I calculated the mean time spent working on my thesis (in hours) for each type of caffeine I consume that day. This is informative because different types of caffeine may affect my focus and productivity, which could influence how much time I am able to spend on my thesis.
 
 ### b. Visualization
 
 ```{r - data visualization}
+#| echo: true
+#| message: false
+#| warning: false
+#| results: 'hide'
+
+show_col_types = FALSE
 
 # reading in data file and storing as an object named "my_data"
 my_data <- read_csv(here("data", "personal_data.csv")) 
@@ -57,7 +63,7 @@ ggplot(my_data, aes(
 
 ### c. Caption
 
-**\[Figure 1.** Mean time spent working on my thesis by type of caffeine consumed. Each dot represents one day's recorded thesis work time. Bars indicate the average thesis time for each caffeine category.\]
+**Figure 1.** Mean time spent working on my thesis by type of caffeine consumed. Each dot represents one day's recorded thesis work time. Bars indicate the average thesis time for each caffeine category.
 
 ### d. Table presentation
 
@@ -78,7 +84,7 @@ summary_thesis |>
 
 ### a. Describe in words what an affective visualization could look like for your personal data
 
-\[I could make a scatter plot with phone screen time on the x-axis and time spent on my thesis on the y-axis to see how these two variables relate. Each point would present a day, and I could use different colors or shapes to indicate the type of caffeine consumed that day. For extra insight, the size of the points could reflect the number of classes I had that day, showing how my schedule might influence both screen and thesis time. This visualization would help me quickly identify patterns or correlations, like whether high screen time is linked to less thesis work or if caffeine impacts this relationship.\]
+I could make a scatter plot with phone screen time on the x-axis and time spent on my thesis on the y-axis to see how these two variables relate. Each point would present a day, and I could use different colors or shapes to indicate the type of caffeine consumed that day. For extra insight, the size of the points could reflect the number of classes I had that day, showing how my schedule might influence both screen and thesis time. This visualization would help me quickly identify patterns or correlations, like whether high screen time is linked to less thesis work or if caffeine impacts this relationship.
 
 ### b. Create a sketch (on paper) of your idea
 
@@ -87,6 +93,12 @@ summary_thesis |>
 ### c. Make a draft of your visualization
 
 ```{r}
+#| echo: true
+#| message: false
+#| warning: false
+#| results: 'hide'
+
+show_col_types = FALSE
 my_data <- read_csv(here("data", "personal_data.csv")) 
 
 ggplot(data = my_data,
@@ -102,7 +114,7 @@ ggplot(data = my_data,
        color = "Caffeine Consumed",
        size = "Number of Classes") + 
   theme_minimal(base_size = 8) +
-  theme(legend.key.size = unit(.5, "cm"))
+  theme(legend.key.size = unit(.6, "cm"))
 ```
 
 ### d. Write an artist statement
@@ -113,18 +125,18 @@ ggplot(data = my_data,
 
 ### a. Revisit and summarize
 
-\[The authors use a one-way analysis of variance (ANOVA) to compare economic variables across country types. The response variables are cattle price and meat yield per animal and the predictor variable is the economic classification of a country (developing, transition, or developed economy). The ANOVA tests whether there are statistically significant differences in cattle price and meat yield among countries of different economic classifications. A significant result suggests that structural economic disadvantages (like low meat yield or unstable cattle prices) could make farmers in developing nations more vulnerable to the impacts of human-wildlife conflict, reinforcing the broader theme of unequal burden.\]
+The authors use a one-way analysis of variance (ANOVA) to compare economic variables across country types. The response variables are cattle price and meat yield per animal and the predictor variable is the economic classification of ak country (developing, transition, or developed economy). The ANOVA tests whether there are statistically significant differences in cattle price and meat yield among countries of different economic classifications. A significant result suggests that structural economic disadvantages (like low meat yield or unstable cattle prices) could make farmers in developing nations more vulnerable to the impacts of human-wildlife conflict, reinforcing the broader theme of unequal burden.
 
-\![Figure from paper](/data/paper_figure.png)
+![](paper_figure.jpeg)
 
 ### b. Visual clarity
 
-\[Figure 3 clearly presents the variation in cattle price and meat yields across developing, transition, and developed economies using box plots, which effectively summarize the distribution of data including medians, quartiles, and potential outliers. The x- and y-axes are logically placed and clearly labeled, making it easy to compare economic groups. The economic groups are color coded to make it clear.\]
+Figure 3 clearly presents the variation in cattle price and meat yields across developing, transition, and developed economies using box plots, which effectively summarize the distribution of data including medians, quartiles, and potential outliers. The x- and y-axes are logically placed and clearly labeled, making it easy to compare economic groups. The economic groups are color coded to make it clear.
 
 ### c. Aesthetic clarity
 
-\[The authors handle visual clutter well in Figure 3 by using clean and simple box plots that focus attention on the key comparisons between economic groups. The figure maintains a high data-to-ink ratio, avoiding unnecessary decorative elements or excessive grid lines, which helps emphasize the important statistical differences. They also use images of money and cattle in each graph to clearly show what the figure is showing, which I found helpful rather than reading the titles of the graphs at a quick glance.\]
+The authors handle visual clutter well in Figure 3 by using clean and simple box plots that focus attention on the key comparisons between economic groups. The figure maintains a high data-to-ink ratio, avoiding unnecessary decorative elements or excessive grid lines, which helps emphasize the important statistical differences. They also use images of money and cattle in each graph to clearly show what the figure is showing, which I found helpful rather than reading the titles of the graphs at a quick glance.
 
 ### d. Recommendations
 
-\[To improve Figure 3, I would recommend adding individual data points overlaid on the box plots to provide more transparency about the distribution and sample size within each economic group. This would help readers assess variability and potential outliers more easily. Additionally, I would add exact sample sizes (n) for each group directly on the figure or in the caption. Additionally, it would be helpful to differentiate between the all years combined and the 2009 only data with different colors or have bigger text because at a glance, the graphs all look very similar. Lastly, it may be helpful to have significance markers to highlight statistically significant difference between groups to immediately convey which comparisons are meaningful.\]
+To improve Figure 3, I would recommend adding individual data points overlaid on the box plots to provide more transparency about the distribution and sample size within each economic group. This would help readers assess variability and potential outliers more easily. Additionally, I would add exact sample sizes (n) for each group directly on the figure or in the caption. Additionally, it would be helpful to differentiate between the all years combined and the 2009 only data with different colors or have bigger text because at a glance, the graphs all look very similar. Lastly, it may be helpful to have significance markers to highlight statistically significant difference between groups to immediately convey which comparisons are meaningful.
