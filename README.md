@@ -22,9 +22,11 @@ The assignment includes a statistical critique of a published paper, the creatio
 
 - `ENVS-193DS_homework-03.html`: The rendered HTML version of the Quarto document, containing all responses and graphics in final form.
 
-- `paper_figure.png`: A screenshot of the figure (Fig. 3) from the paper used in the analysis.
+- `paper_figure.jpeg`: A screenshot of the figure (Fig. 3) from the paper used in the analysis.
 
 - `sketch.jpg`: A photo of the affective visualization sketch submitted for Problem 2.
+
+- `draft.jpg`: A photo of the affective visualization draft submitted for Problem 2.
 
 ## Rendered Output
 
