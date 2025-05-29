@@ -96,7 +96,7 @@ For an affective visualization of my data, I want to create a horizon. The x-axi
 
 ### d. Write an artist statement
 
-\[\]
+In my piece, I am showing the comparison of thesis work time and screen time per day in hours. I wanted to use a horizon as a visual metaphor to compare the two activities. Screen time is in cooler tones and represents the water, whereas thesis time is warm tones and represents the sunset. I hope to convery my productivity using these colors, also showing that working on the thesis is like looking forward whereas procrastinating on my phone is not. I used my iPad to draw the visualization by first assigning colors to each drink, then laying out the x-axis. I went through each day and looked at the thesis time, screen time, and caffeine type for that day. I would like to add my other variables (sleep time, number of classes, and whether or not I exercised) in the second draft of this visualization.
 
 ## Problem 3. Statistical critique
 
