@@ -84,38 +84,15 @@ summary_thesis |>
 
 ### a. Describe in words what an affective visualization could look like for your personal data
 
-I could make a scatter plot with phone screen time on the x-axis and time spent on my thesis on the y-axis to see how these two variables relate. Each point would present a day, and I could use different colors or shapes to indicate the type of caffeine consumed that day. For extra insight, the size of the points could reflect the number of classes I had that day, showing how my schedule might influence both screen and thesis time. This visualization would help me quickly identify patterns or correlations, like whether high screen time is linked to less thesis work or if caffeine impacts this relationship.
+For an affective visualization of my data, I want to create a horizon. The x-axis would be hours. Above the horizon would be a line for each day showing thesis time. Below the horizon would be a line for each day showing screen time. Each line would be colored based on type of caffeine consumed, with the thesis colors being warm toned and the screen time being cool toned.
 
 ### b. Create a sketch (on paper) of your idea
 
-\[\]
+![](sketch.jpg)
 
 ### c. Make a draft of your visualization
 
-```{r}
-#| echo: true
-#| message: false
-#| warning: false
-#| results: 'hide'
-
-show_col_types = FALSE
-my_data <- read_csv(here("data", "personal_data.csv")) 
-
-ggplot(data = my_data,
-       aes(x = Screen_Time_hrs,
-           y = Thesis_Time_hrs,
-           color = Caffeine_Consumed,
-           size = Num_Classes)) +
-  geom_point(alpha = 0.7) + 
-  scale_color_manual(values = c("Coffee" = "darkmagenta", "Decaf Coffee" = "darkorange", "Matcha" = "darkgreen", "None" = "darkblue")) + 
-  labs(title = "Relationship Between Screen Time and Thesis Work",
-       x = "Daily Screen Time (hours)",
-       y = "Daily Thesis Time (hours)",
-       color = "Caffeine Consumed",
-       size = "Number of Classes") + 
-  theme_minimal(base_size = 8) +
-  theme(legend.key.size = unit(.6, "cm"))
-```
+![](draft.jpg)
 
 ### d. Write an artist statement
 
@@ -125,7 +102,7 @@ ggplot(data = my_data,
 
 ### a. Revisit and summarize
 
-The authors use a one-way analysis of variance (ANOVA) to compare economic variables across country types. The response variables are cattle price and meat yield per animal and the predictor variable is the economic classification of ak country (developing, transition, or developed economy). The ANOVA tests whether there are statistically significant differences in cattle price and meat yield among countries of different economic classifications. A significant result suggests that structural economic disadvantages (like low meat yield or unstable cattle prices) could make farmers in developing nations more vulnerable to the impacts of human-wildlife conflict, reinforcing the broader theme of unequal burden.
+The authors use a one-way analysis of variance (ANOVA) to compare economic variables across country types. The response variables are cattle price and meat yield per animal and the predictor variable is the economic classification of country (developing, transition, or developed economy). The ANOVA tests whether there are statistically significant differences in cattle price and meat yield among countries of different economic classifications. A significant result suggests that structural economic disadvantages (like low meat yield or unstable cattle prices) could make farmers in developing nations more vulnerable to the impacts of human-wildlife conflict, reinforcing the broader theme of unequal burden.
 
 ![](paper_figure.jpeg)
 
