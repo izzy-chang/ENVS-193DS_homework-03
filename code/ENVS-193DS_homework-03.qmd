@@ -37,24 +37,26 @@ I calculated the mean time spent working on my thesis (in hours) for each type o
 #| warning: false
 #| results: 'hide'
 
-show_col_types = FALSE
+show_col_types = FALSE # hide the columns and codes and messages
 
 # reading in data file and storing as an object named "my_data"
 my_data <- read_csv(here("data", "personal_data.csv")) 
 
-summary_thesis <- my_data |> 
+summary_thesis <- my_data |> # create a summary data frame
   group_by(Caffeine_Consumed) |> 
-  summarize(mean_thesis_time = mean(Thesis_Time_hrs))
+  summarize(mean_thesis_time = mean(Thesis_Time_hrs)) # for each caffeine type, calculate the mean thesis time
 
+# create a ggplot to visualize thesis time by caffeine type
 ggplot(my_data, aes(
-  x = Caffeine_Consumed,
-  y = Thesis_Time_hrs,
-  fill = Caffeine_Consumed
+  x = Caffeine_Consumed, # caffeine type on x-axis
+  y = Thesis_Time_hrs, # thesis time on y-axis
+  fill = Caffeine_Consumed # fill color based on caffeine type
 )) + 
-  geom_jitter(width = 0.2, alpha = 0.5) + 
-  stat_summary(fun = mean, geom = "bar", color = "black", alpha = 0.7, width = 0.6) + 
+  geom_jitter(width = 0.2, alpha = 0.5) + # add semi-transparent jittered points to show raw data
+  stat_summary(fun = mean, geom = "bar", # overlay summary bar for mean thesis time
+      color = "black", alpha = 0.7, width = 0.6) + # cutomize colors
   scale_fill_manual(values = c("Coffee" = "darkmagenta", "Decaf Coffee" = "darkorange", "Matcha" = "darkgreen", "None" = "darkblue")) + 
-  labs(
+  labs( # add title and axis labels
     title = "Average Time Spent of Thesis by Caffeine Type",
     x = "Caffeine Type",
     y = "Thesis Time (hours)"
@@ -63,17 +65,18 @@ ggplot(my_data, aes(
 
 ### c. Caption
 
-**Figure 1.** Mean time spent working on my thesis by type of caffeine consumed. Each dot represents one day's recorded thesis work time. Bars indicate the average thesis time for each caffeine category.
+**Figure 1.** Mean time spent working on my thesis by type of caffeine consumed. Each dot represents one day's recorded thesis work time. Different color bars indicate the average thesis time for each caffeine category.
 
 ### d. Table presentation
 
 ```{r}
-summary_thesis |> 
+# start with summary_thesis data frame 
+summary_thesis |> # round the mean thesis time to 1 decimal
   mutate(mean_thesis_time = round(mean_thesis_time, 1)) |> 
-  gt() |> 
-  tab_header(
+  gt() |> # start building formatted table
+  tab_header( # add title to table
     title = "Mean Thesis Time by Caffeine Type"
-  ) |> 
+  ) |> # rename column headers
   cols_label(
     Caffeine_Consumed = "Caffeine Type",
     mean_thesis_time = "Mean Thesis Time (hours)"
